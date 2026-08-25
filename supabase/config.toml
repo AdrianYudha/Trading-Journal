@@ -1,0 +1,10 @@
+project_id = "azytgildutdbhbzanqos"
+
+[functions.register-user]
+verify_jwt = false
+
+[functions.tradingview-preview]
+verify_jwt = false
+
+[functions.admin-users]
+verify_jwt = true

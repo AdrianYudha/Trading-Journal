@@ -1,0 +1,21 @@
+/* App-specific styles handled via Tailwind */
+
+@keyframes tradeSuccessFlash {
+  0% { opacity: 0.65; transform: translateY(4px) scale(0.995); background-color: rgba(16, 185, 129, 0.16); }
+  45% { opacity: 1; transform: translateY(0) scale(1); background-color: rgba(16, 185, 129, 0.28); }
+  100% { opacity: 0; transform: translateY(-4px) scale(0.99); }
+}
+
+@keyframes tradeDeleteFlash {
+  0% { opacity: 1; transform: translateX(0); background-color: rgba(239, 68, 68, 0.08); }
+  35% { opacity: 1; transform: translateX(-4px); background-color: rgba(239, 68, 68, 0.22); }
+  100% { opacity: 0; transform: translateX(28px); }
+}
+
+.animate-trade-success {
+  animation: tradeSuccessFlash 450ms ease-out forwards;
+}
+
+.animate-trade-delete {
+  animation: tradeDeleteFlash 450ms ease-out forwards;
+}
